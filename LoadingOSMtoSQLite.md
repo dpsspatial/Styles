@@ -22,15 +22,6 @@ And to limit the area you want to import to a specific bounding box, use this sy
 
 	ogr2ogr -f "SQLite" -dsco SPATIALITE=YES -spat -105.1457194640948671 39.4826335795378611 -104.5138338857370286 39.9707611278579904 Denver_OSM colorado.osm.pbf
 
-###Navigating your data###
-
-
-###Other OSM Resources##
-
-Mapzen offers daily extracts of OSM Data in various formats
-
-###Thanks###
-
 
 Thanks to [Anita Graser](http://anitagraser.com/2014/05/31/a-guide-to-googlemaps-like-maps-with-osm-in-qgis/) for first publishing these instructions.
 
