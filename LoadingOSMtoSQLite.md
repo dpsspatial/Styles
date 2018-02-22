@@ -8,9 +8,13 @@ First, start by downloading the area you're located from the GeoFabrik website:
 
  [http://download.geofabrik.de/north-america.html](http://download.geofabrik.de/north-america.html)
 
+The result is a file with a .osm.pbf extension. We use the Colorado file, our file is called colorado-latest.osm.pbf
+
+At this point, the file - which is huge - can have the Google-like styles applied, but we'll clip it to a bounding box of the Denver area, and convert it to a SQLite file.
+
 ###Import into SQLite###
 
-With GDAL installed, you can use the ogr2ogr command to 
+With GDAL installed, you can use the ogr2ogr command to both clip and load the downloaded file in one command.
 
 Next, using using terminal or command prompt, navigate to the directory you downloaded your
 
