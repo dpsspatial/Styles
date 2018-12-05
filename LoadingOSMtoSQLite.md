@@ -1,8 +1,8 @@
-#Using QGIS Styles with OpenStreetMap Data
+# Using QGIS Styles with OpenStreetMap Data #
 
 This tutorial will show how to download an Open Street Map (OSM) .pbf file (compressed spatial data format), load it into a SQLite database, and style it using QGIS style files.
 
-###Download OSM Data###
+**Download OSM Data**
 
 First, start by downloading the area you're located from the GeoFabrik website:
 
@@ -12,7 +12,7 @@ The result is a file with a .osm.pbf extension. We use the Colorado file, our fi
 
 At this point, the file - which is huge - can have the Google-like styles applied, but we'll clip it to a bounding box of the Denver area, and convert it to a SQLite file.
 
-###Import into SQLite###
+**Import into SQLite**
 
 With GDAL installed, you can use the ogr2ogr command to both clip and load the downloaded file in one command.
 
@@ -28,4 +28,3 @@ And to limit the area you want to import to a specific bounding box, use this sy
 
 
 Thanks to [Anita Graser](http://anitagraser.com/2014/05/31/a-guide-to-googlemaps-like-maps-with-osm-in-qgis/) for first publishing these instructions.
-
